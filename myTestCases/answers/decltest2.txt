@@ -1,0 +1,3 @@
+foo_2:var7,var5,var4,var3,var2
+foo_3:x
+foo_4:var5,var4,var1,var3

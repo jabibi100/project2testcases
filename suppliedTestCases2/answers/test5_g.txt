@@ -1,0 +1,3 @@
+main:j
+init1:b
+Global:g1

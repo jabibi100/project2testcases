@@ -1,0 +1,3 @@
+foo2:y
+foo3:z,y
+foo5:y,z

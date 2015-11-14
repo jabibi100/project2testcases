@@ -1,0 +1,7 @@
+main:r1,r2
+foo4:t1
+foo3:z1,z2
+foo2:y1,y2
+foo1:x1,x2
+global:g7,g6,g4,g2,g1
+

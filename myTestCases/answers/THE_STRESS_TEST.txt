@@ -1,0 +1,5 @@
+loops:a,b,c,d
+nested:r,s,t,u,v,w
+switches:f,g,h,j
+cond:n
+Global:g3,g8,g9
