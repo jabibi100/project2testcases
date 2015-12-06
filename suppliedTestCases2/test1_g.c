@@ -6,15 +6,15 @@ void init()
 }
 main()
 {
-  int k;
+ 
+ int k;
 
-printf("Please input 1st value: ");
-scanf("%d", &k);
+ printf("Please input 1st value: ");
+ scanf("%d", &k);
+ init();
+ if ( k > 0 ) glob1 = 0;
 
-init();
-if ( k > 0 ) glob1 = 0;
 
-
-printf("glob1=%d\n",glob1);
+ printf("glob1=%d\n",glob1);
 }
 
