@@ -4,6 +4,7 @@ use warnings;
 use strict;
 use Term::ANSIColor;
 use File::Compare;
+use Getopt::Long;
 
 # root dir of all tests
 my $root = '.';
@@ -16,6 +17,16 @@ my $totalTest = 0;
 #diff command
 my $command = "sdiff";
 
+#command line flags
+my $verbose = 0;
+
+if(@ARGV > 0 
+	and !GetOptions (
+		'verbose+' => \$verbose
+		)
+	){
+		die("Invalid parameter passed\n");
+	}
 
 #Open root dir
 opendir(D, $root) || die "Can't open directory: $!\n";
@@ -52,12 +63,14 @@ while (my $f = readdir(D)) {
 						my $answerFileName = substr($testfile, 0, -2) . ".txt";
 						my $diffResults = `$command ./output.txt ./$f/answers/$answerFileName -s -W`;
 						
-						if($? != 0){
-							print colored( sprintf("%-40sFAIL", $testfile), 'red' ), "\n";
-						}
-						elsif (length($diffResults) != 0) {
+						if (length($diffResults) != 0) {
 							print colored( sprintf("%-40s", $testfile), 'bright_blue' );
 							print colored("FAIL", "red"), "\n";
+							#if we want verbose test output
+							if($verbose gt 0){
+								#print "VERBOSE!!!!!" . $verbose . "\n";
+								print $diffResults;
+							}
 						}
 						else{
 							print colored( sprintf("%-40s", $testfile), 'bright_blue' );
