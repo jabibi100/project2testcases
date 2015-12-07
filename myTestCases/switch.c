@@ -115,7 +115,7 @@ void foo5()
         case 1:
             a = 1.0; break;
         case 2:
-            a = 2.0; break;
+            a = 2.0; break; 
     }
 
     // "a" is uninitialized since there is not DEFAULT block above.
