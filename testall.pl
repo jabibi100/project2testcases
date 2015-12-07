@@ -33,7 +33,7 @@ opendir(D, $root) || die "Can't open directory: $!\n";
 
 while (my $f = readdir(D)) {
     if ( -d $f ){
-		if ( $f ne "." && $f ne ".."){
+		if ( $f ne "." && $f ne ".." && $f ne ".git"){
 			# For each directory iterate through all test cases and compare output storing results
 			opendir(TESTDIR, "$root/$f");
 			
