@@ -69,7 +69,7 @@ while (my $f = readdir(D)) {
 							#if we want verbose test output
 							if($verbose gt 0){
 								#print "VERBOSE!!!!!" . $verbose . "\n";
-								print $diffResults;
+								print $diffResults . "\n";
 							}
 						}
 						else{

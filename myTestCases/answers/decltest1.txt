@@ -1,2 +1,2 @@
-function_a:f4,f6,f2
+function_a:f2,f4,f6
 function_b:x
