@@ -1,2 +1,1 @@
-f3:b
-Global:x,z
+Global:x
