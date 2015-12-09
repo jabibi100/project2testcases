@@ -58,12 +58,15 @@ void foo4()
     int y = 1;
     char z;
 
-    if( y > 0 )
+    if( y > 0 ){
         z = 'a';
-    else if( y == 0 )
+	}
+    else if( y == 0 ){
         z = 'b';
-    else
+	}
+    else{
         z = 'c';
+	}
 
     // "z" should NOT be printed:
     printf( "%d\n", z );
@@ -103,10 +106,13 @@ void foo6()
     }
     else
     {
-        if( x < 100 )
+        if( x < 100 ){
             y = 101;
-        else
+			y = 201;
+		}
+        else{
             y = 102;
+		}
     }
         
     // "y" should be OK

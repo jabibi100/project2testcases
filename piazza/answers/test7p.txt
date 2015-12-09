@@ -1,0 +1,4 @@
+main:a
+f3:c
+f1:c,d
+Global:x
