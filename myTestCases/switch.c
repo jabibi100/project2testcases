@@ -124,10 +124,10 @@ void foo5()
 
 int main(){
 
-	void foo();
-	void foo2();
-	void foo3();
-	void foo4();
-	void foo5();
+	foo();
+	foo2();
+	foo3();
+	foo4();
+	foo5();
 }
 
