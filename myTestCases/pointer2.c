@@ -1,5 +1,3 @@
-int * c;
-
 foo(int * blah){
 	*blah = 10;
 }
@@ -23,6 +21,4 @@ int main(){
 	foo(&a);
 	foo(b);
 	printf("%d %d\n" a, b);
-	foo1(*c);
-	printf("%d\n", c);	
 }
