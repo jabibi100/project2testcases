@@ -12,7 +12,7 @@ void foo()
     }
 
     // "x" should be printed:
-    //printf( "%d\n", x );
+    printf( "%d\n", x );
 }
 
 void foo2()
@@ -47,27 +47,50 @@ void foo3()
     while(x > 2)
     {
         int z;
-
-        y = 2;
-
+        
+		if(y > 15)
+			continue;
+		
+		if(y < 10){
+			y = 2;
+			break;
+		}
+		
         // "z" should be reported
         printf( "%d\n", z );
     }
 
     // "y" should be reported..
     printf( "%d\n", y );
+}
 
-#if 0
-    while( x > 2 )
+void foo4(int a){
+	int x;
+	
+	while(a > 10)
+		if(a > 10){
+			x = 10;
+			printf("blah");
+		}
+		else{
+			printf("%d\n", x);
+		}
+}
+
+void foo5(){
+	int x,y = 2;
+	
+	while( x > 2 )
         while( y > 1 )
             printf( "hello\n" );
-#endif
 }
 
 int main(){
 	foo();
 	foo2();
 	foo3();
+	foo4(10);
+	foo5();
 }
 
 
