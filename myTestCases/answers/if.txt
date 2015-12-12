@@ -1,3 +1,3 @@
 foo2:y
 foo3:y,z
-foo5:y,z
+foo5:z,y
