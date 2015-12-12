@@ -1,1 +1,1 @@
-Global:g3,g1
+Global:g1,g3
