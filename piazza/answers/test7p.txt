@@ -1,4 +1,4 @@
 main:a
 f3:c
-f1:c,d
+f1:d,c
 Global:x
